@@ -1,0 +1,3 @@
+INSERT INTO [dbo].[Produtos] ([Excluido],[Nome],[Preco],[Sku]) VALUES (0, 'Iphone 14 Pro Max 64GB', 10000.00, 'IPH0')
+INSERT INTO [dbo].[Produtos] ([Excluido],[Nome],[Preco],[Sku]) VALUES (0, 'Iphone 13 Pro Max 64GB', 9000.00, 'IPH1')
+INSERT INTO [dbo].[Clientes] ([DataExpedicao] ,[Numero] ,[OrgaoExpedidor] ,[Email] ,[Nome], [DataDeNascimento],[EstaExcluido]) VALUES ('2002-03-03','46657895211','SSP','leonardo.gasparini@fiap.com.br','Leonardo Gasparini', '1994-02-02', false)
