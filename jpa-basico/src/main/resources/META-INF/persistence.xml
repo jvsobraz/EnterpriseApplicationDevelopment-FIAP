@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+    <persistence-unit name="Clientes-PU">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="javax.persistence.jdbc.driver"
+                      value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:sqlserver://DESKTOP-CM1TEAO:1433;databaseName=JpaExample;encrypt=false"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value="10101010"/>
+            <property name="javax.persistence.query.timeout" value="10"/>
+
+            <!--<property name="javax.persistence.schema-generation.database.action"
+                      value="drop-and-create"/>
+            <property name="javax.persistence.sql-load-script-source"
+                      value="META-INF/database/load.sql"/>-->
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+
+        </properties>
+    </persistence-unit>
+</persistence>
